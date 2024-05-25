@@ -3,6 +3,7 @@
 @page "/CV/Cursos"
 @page "/CV/Courses"
 
+@using CV.Shared;
 
 @inject IStringLocalizer<AllResourcesRes> AllResourcesResolver
 
@@ -15,47 +16,47 @@
         </h2>
 
          <SharedSection AltImagen="Udemy"
-                       Description=@CreateFromString(@$"<div>{AllResourcesResolver["EntityFrameworkDeVerdadDescription"]}</p></div>")
+                       Description=@(@$"<div>{AllResourcesResolver["EntityFrameworkDeVerdadDescription"]}</p></div>".StringToRenderFragament())
                        Subtitulo=@AllResourcesResolver["EntityFrameworkDeVerdadSubtitle"]
                        SrcImagen="assets/icons/cursos/udemy.png"
                        Titulo=@AllResourcesResolver["EntityFrameworkDeVerdadTitle"]
                        TiempoTrabajo="mar. 2023" />
            <SharedSection AltImagen="PUE"
-                       Description=@CreateFromString(@$"<div>{AllResourcesResolver["DockerCertificatedAsociatedDescription"]}</p></div>")
+                       Description=@(@$"<div>{AllResourcesResolver["DockerCertificatedAsociatedDescription"]}</p></div>".StringToRenderFragament())
                        Subtitulo=@AllResourcesResolver["DockerCertificatedAsociatedSubtitulo"]
                        SrcImagen="assets/icons/cursos/pue.png"
                        Titulo=@AllResourcesResolver["DockerCertificatedAsociated"]
                        TiempoTrabajo="mar. 2023" />
 
         <SharedSection AltImagen="Campus mvp"
-                       Description=@CreateFromString(@$"<div>{AllResourcesResolver["CssHtmlMVPDescripcion"]}</p></div>")
+                       Description=@(@$"<div>{AllResourcesResolver["CssHtmlMVPDescripcion"]}</p></div>".StringToRenderFragament())
                        Subtitulo=@AllResourcesResolver["CssHtmlMVPSubtitulo"]
                        SrcImagen="assets/icons/cursos/campusmvp.png"
                        Titulo=@AllResourcesResolver["CssHtmlMVPTitulo"]
                        TiempoTrabajo="dc. 2023" />
 
         <SharedSection AltImagen="PUE"
-                       Description=@CreateFromString(@$"<div>{AllResourcesResolver["Az204Descripcion"]}</p></div>")
+                       Description=@(@$"<div>{AllResourcesResolver["Az204Descripcion"]}</p></div>".StringToRenderFragament())
                        Subtitulo=@AllResourcesResolver["Az204Subtitulo"]
                        SrcImagen="assets/icons/cursos/pue.png"
                        Titulo=@AllResourcesResolver["Az204Titulo"]
                        TiempoTrabajo="sept. 2023" />
 
         <SharedSection AltImagen="Gobierno de la Rioja"
-                       Description=@CreateFromString(@$"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p> {AllResourcesResolver["descripcionCursoMaui"]} </p></div>")
+                       Description=@(@$"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p> {AllResourcesResolver["descripcionCursoMaui"]} </p></div>".StringToRenderFragament())
                        Subtitulo=@($"{AllResourcesResolver["idCredencial"]} A5B5KNFRNNOALQ8")
                        SrcImagen="assets/icons/cursos/gobrioja.png"
                        Titulo=@AllResourcesResolver["tituloReact"]
                        TiempoTrabajo="jun. 2023" />
 
         <SharedSection AltImagen="Azure Fundamentals"
-                       Description=@CreateFromString(@$"<div><a href=""https://www.credly.com/badges/cd0b206f-92b1-4f31-a4a6-91d839f75b7c/linked_in? t=rn03ir"">{AllResourcesResolver["verificacionDocumentos"]}</a></div>")
+                       Description=@(@$"<div><a href=""https://www.credly.com/badges/cd0b206f-92b1-4f31-a4a6-91d839f75b7c/linked_in? t=rn03ir"">{AllResourcesResolver["verificacionDocumentos"]}</a></div>".StringToRenderFragament())
                        Subtitulo=@($"{AllResourcesResolver["idCredencial"]} 994243461")
                        SrcImagen="assets/icons/cursos/azurefundamentals.png"
                        Titulo=@AllResourcesResolver["tituloaz900"]
                        TiempoTrabajo="dc. 2022" />
         <SharedSection AltImagen="Gobierno de la Rioja"
-                       Description=@CreateFromString(@$"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p> {AllResourcesResolver["descripcionCursoMaui"]} </p></div>")
+                       Description=@(@$"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p> {AllResourcesResolver["descripcionCursoMaui"]} </p></div>".StringToRenderFragament())
                        Subtitulo=@($"{AllResourcesResolver["idCredencial"]} E5M024D62Y90BZT")
                        SrcImagen="assets/icons/cursos/gobrioja.png"
                        Titulo=@AllResourcesResolver["tituloCursoMaui"]
@@ -63,7 +64,7 @@
 
 
         <SharedSection AltImagen="Gobierno de la Rioja"
-                       Description=@CreateFromString($@"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div>")
+                       Description=@($@"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div>".StringToRenderFragament())
                        Subtitulo=@($"{AllResourcesResolver["idCredencial"]} Y83Q73BHZDJY9BF")
                        SrcImagen="assets/icons/cursos/gobrioja.png"
                        Titulo=@AllResourcesResolver["tituloCursoBlazor"]
@@ -71,7 +72,7 @@
 
 
         <SharedSection AltImagen="Gobierno de la Rioja"
-                       Description=@CreateFromString($@"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p>{AllResourcesResolver["descripcionProgramacionNET"]} </p></div>")
+                       Description=@($@"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p>{AllResourcesResolver["descripcionProgramacionNET"]} </p></div>".StringToRenderFragament())
                        Subtitulo=@($"{AllResourcesResolver["idCredencial"]} IYYS1J3Y8FGH5J5ID")
                        SrcImagen="assets/icons/cursos/gobrioja.png"
                        Titulo=@AllResourcesResolver["tituloProgramacionNET"]
@@ -79,21 +80,21 @@
 
 
         <SharedSection AltImagen="GoogleActivate"
-                       Description=@CreateFromString($@"{AllResourcesResolver["descripcionCloudComputing"]} <a href=""https://learndigital.withgoogle.com/link/1nur091p2ww"">")
+                       Description=@($@"{AllResourcesResolver["descripcionCloudComputing"]} <a href=""https://learndigital.withgoogle.com/link/1nur091p2ww"">".StringToRenderFragament())
                        Subtitulo=@($"{AllResourcesResolver["idCredencial"]} NZQ DVY NBU")
                        SrcImagen="assets/icons/cursos/googleactivate.png"
                        Titulo="Cloud Computing"
                        TiempoTrabajo="oct. 2021" />
 
         <SharedSection AltImagen="Gobierno de la Rioja"
-                       Description=@CreateFromString($@"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p>{AllResourcesResolver["descripcionContenedoresDocker"]}</p></div>")
+                       Description=@($@"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p>{AllResourcesResolver["descripcionContenedoresDocker"]}</p></div>".StringToRenderFragament())
                        Subtitulo=@($"{AllResourcesResolver["idCredencial"]} UXGJYIVF8J4JEZX")
                        SrcImagen="assets/icons/cursos/gobrioja.png"
                        Titulo=@AllResourcesResolver["tituloContenedoresDocker"]
                        TiempoTrabajo="sept. 2021" />
 
         <SharedSection AltImagen="GoogleActivate"
-                       Description=@CreateFromString($@"{AllResourcesResolver["idCredencial"]} AAU 9KS DU9 & R3D SRM CTN</div><div><a href=""https://learndigital.withgoogle.com/link/1nur091p2ww"">{AllResourcesResolver["verificacionCertificados"]}</a></div><div><p>{AllResourcesResolver["descripcionIntroduccionDesarrolloWeb"]}</p></div>")
+                       Description=@($@"{AllResourcesResolver["idCredencial"]} AAU 9KS DU9 & R3D SRM CTN</div><div><a href=""https://learndigital.withgoogle.com/link/1nur091p2ww"">{AllResourcesResolver["verificacionCertificados"]}</a></div><div><p>{AllResourcesResolver["descripcionIntroduccionDesarrolloWeb"]}</p></div>".StringToRenderFragament())
                        Subtitulo=@($"{AllResourcesResolver["idCredencial"]} AAU 9KS DU9 & R3D SRM CTN")
                        SrcImagen="assets/icons/cursos/googleactivate.png"
                        Titulo=@AllResourcesResolver["tituloIntroduccionDesarrolloWeb"]
@@ -101,14 +102,3 @@
     </div>
 </section>
 
-@code {
-    public RenderFragment CreateFromString(string content)
-    {
-        RenderFragment renderFragment = builder =>
-        {
-            builder.AddMarkupContent(0, content);
-        };
-
-        return renderFragment;
-    }
-}

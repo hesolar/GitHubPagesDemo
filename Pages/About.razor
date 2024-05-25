@@ -18,28 +18,28 @@
             @AllResourcesResolver["descripcionSobreMi3"]
         </p>
 
-        <div class="container">
-            <!-- heading text -->
-            <ul class="image-gallery" style="display: flex;  flex-wrap: wrap;">
-                <li class="liimagen">
-                    <img src="assets/img/personales/d.jpeg" width="200" height="250" class="imgGaleria" />
-                </li>
 
-                <li class="liimagen">
-                    <img src="assets/img/personales/c.png" width="250" height="250" class="imgGaleria" />
-                </li>
-                <li class="liimagen">
-                    <img src="assets/img/personales/a.jpeg" width="250" height="250" class="imgGaleria" />
-                </li>
-                <li class="liimagen">
-                    <img src="assets/img/personales/b.png" width="250" height="250" class="imgGaleria" />
-                </li>
-                @* <li class="liimagen">
-                    <img src="assets/img/personales/e.jpeg" width="250" height="250" class="imgGaleria" />
-                </li> *@
+      
+        <Carousel Crossfade="false" Interval="3500">
+            <CarouselSlide Name="d">
+                <Image Source="assets/img/personales/d.jpeg" Text="Lights image" Display="Display.Block" Width="Width.Is100" Height="Height.Is25" />
+            </CarouselSlide>
+            <CarouselSlide Name="c">
+                <Image Source="assets/img/personales/c.png" Text="Keyboard image" Display="Display.Block" Width="Width.Is100" Height="Height.Is25" />
+            </CarouselSlide>
+            <CarouselSlide Name="b">
+                <Image Source="assets/img/personales/b.png" Text="Road image" Display="Display.Block" Width="Width.Is100" Height="Height.Is25" />
+            </CarouselSlide>
 
-            </ul>
-        </div>
+            <CarouselSlide Name="e">
+                <Image Source="assets/img/personales/e.png" Text="Ajedrez" Display="Display.Block" Width="Width.Is100" Height="Height.Is25" />
+            </CarouselSlide>
+
+
+        </Carousel>
+       
+   
     </div>
+    
 
 </section>

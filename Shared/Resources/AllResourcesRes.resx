@@ -237,14 +237,14 @@
   <data name="lenguagesProgramacion" xml:space="preserve">
     <value>Lenguajes de Programación</value>
   </data>
-  <data name="mes" xml:space="preserve">
-    <value>mes</value>
-  </data>
-  <data name="meses" xml:space="preserve">
-    <value>meses</value>
-  </data>
   <data name="metodologias" xml:space="preserve">
     <value>Metodologías y principios</value>
+  </data>
+  <data name="month" xml:space="preserve">
+    <value>mes</value>
+  </data>
+  <data name="months" xml:space="preserve">
+    <value>meses</value>
   </data>
   <data name="navbar_cursos" xml:space="preserve">
     <value>Cursos</value>
@@ -278,6 +278,9 @@
   </data>
   <data name="programadorWebJuniorHiberusTitulo" xml:space="preserve">
     <value>PROGRAMADOR WEB</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
   </data>
   <data name="subtituloPersonal" xml:space="preserve">
     <value>Graduado en la Universidad de la Rioja en Ingeniería informática y mención en ingeniería de Software.</value>

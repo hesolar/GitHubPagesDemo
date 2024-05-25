@@ -421,29 +421,29 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Metodologías y principios.
+        /// </summary>
+        public static string metodologias {
+            get {
+                return ResourceManager.GetString("metodologias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a mes.
         /// </summary>
-        public static string mes {
+        public static string month {
             get {
-                return ResourceManager.GetString("mes", resourceCulture);
+                return ResourceManager.GetString("month", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Busca una cadena traducida similar a meses.
         /// </summary>
-        public static string meses {
+        public static string months {
             get {
-                return ResourceManager.GetString("meses", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Metodologías y principios.
-        /// </summary>
-        public static string metodologias {
-            get {
-                return ResourceManager.GetString("metodologias", resourceCulture);
+                return ResourceManager.GetString("months", resourceCulture);
             }
         }
         
@@ -543,6 +543,15 @@ namespace CV.Shared.Resources {
         public static string programadorWebJuniorHiberusTitulo {
             get {
                 return ResourceManager.GetString("programadorWebJuniorHiberusTitulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a .
+        /// </summary>
+        public static string String1 {
+            get {
+                return ResourceManager.GetString("String1", resourceCulture);
             }
         }
         
