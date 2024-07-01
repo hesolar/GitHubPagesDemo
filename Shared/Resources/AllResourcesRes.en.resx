@@ -118,10 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="actualidad" xml:space="preserve">
-    <value>actualidad</value>
-  </data>
-  <data name="actualidad1" xml:space="preserve">
-    <value>actualidad</value>
+    <value>Up to the present</value>
   </data>
   <data name="Az204Descripcion" xml:space="preserve">
     <value>Desarrollo de aplicaciones en la nube y gestión de infraestructura</value>
@@ -309,6 +306,24 @@
   <data name="EntityFrameworkDeVerdadTitle" xml:space="preserve">
     <value>Curso Entity Framework Core </value>
   </data>
+  <data name="GAD" xml:space="preserve">
+    <value>Grupo de Arquitectura de Desarrollo</value>
+  </data>
+  <data name="GAD_descripcion" xml:space="preserve">
+    <value>El grupo de Arquitectura de Desarrollo is a cross-functional team whose main role is to support developers in aspects related to development and the integration of their products into the CI/CD process</value>
+  </data>
+  <data name="GAD_descripcion2" xml:space="preserve">
+    <value>.In addition to providing support, the team also undertakes work to improve the organization's infrastructure, for example, by implementing pipelines in Jenkins and automating QA processes using SonarQube. Another small part of the work involves researching and proposing new technologies that help developers meet service needs.</value>
+  </data>
+  <data name="GAT" xml:space="preserve">
+    <value>Grupo de Arquitectura Técnico</value>
+  </data>
+  <data name="GAT_descripcion" xml:space="preserve">
+    <value>Develop the foundational architecture for the new products to be onboarded onto the service, using a new architecture in NET8 based on DDD."</value>
+  </data>
+  <data name="GAT_descripcion2" xml:space="preserve">
+    <value>In addition to this, support is also provided and incidents that the development team may encounter are reviewed, working with Scrum.</value>
+  </data>
   <data name="idCredencial" xml:space="preserve">
     <value>ID de la credencial:</value>
   </data>
@@ -369,14 +384,14 @@
   <data name="navbar_tecnologias1" xml:space="preserve">
     <value>Tecnologías</value>
   </data>
+  <data name="Participating" xml:space="preserve">
+    <value>Participating in </value>
+  </data>
   <data name="programadorWebJuniorHiberusDescripcion1" xml:space="preserve">
     <value>Mi trabajo en gobierno de Navarra se puede dividir en dos áreas: GAD y Vivienda.</value>
   </data>
   <data name="programadorWebJuniorHiberusDescripcion11" xml:space="preserve">
     <value>Mi trabajo en gobierno de Navarra se puede dividir en dos áreas: GAD y Vivienda.</value>
-  </data>
-  <data name="programadorWebJuniorHiberusDescripcion2" xml:space="preserve">
-    <value>El equipo GAD (Grupo de Arquitectura de Desarrollo) es un equipo transversal cuya función principal es apoyar a los desarrolladores en aspectos relacionados con el desarrollo e integración de sus productos en el proceso de CI/CD. He podido colaborar con el proceso de CI/CD dentro de la organización a través de Jenkins, y mejorar la calidad del código a través de procesos de QA automatizados con SonarQube, además de investigar y proponer nuevas tecnologías que ayuden a la organización con las necesidades que van surgiendo.</value>
   </data>
   <data name="programadorWebJuniorHiberusDescripcion21" xml:space="preserve">
     <value>El equipo GAD (Grupo de Arquitectura de Desarrollo) es un equipo transversal cuya función principal es apoyar a los desarrolladores en aspectos relacionados con el desarrollo e integración de sus productos en el proceso de CI/CD. He podido colaborar con el proceso de CI/CD dentro de la organización a través de Jenkins, y mejorar la calidad del código a través de procesos de QA automatizados con SonarQube, además de investigar y proponer nuevas tecnologías que ayuden a la organización con las necesidades que van surgiendo.</value>

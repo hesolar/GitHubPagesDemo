@@ -231,6 +231,24 @@
   <data name="EntityFrameworkDeVerdadTitle" xml:space="preserve">
     <value>Curso Entity Framework Core </value>
   </data>
+  <data name="GAD" xml:space="preserve">
+    <value>Grupo de Arquitectura de Desarrollo</value>
+  </data>
+  <data name="GAD_descripcion" xml:space="preserve">
+    <value>En el equipo de GAD (Grupo de Arquitectura de Desarrollo) se trata de un equipo transversal que tiene como función principal dar soporte a los desarrolladores en aspectos relacionados con el desarrollo y la integración de sus productos en el proceso de CI/CD.</value>
+  </data>
+  <data name="GAD_descripcion2" xml:space="preserve">
+    <value>Además del soporte también se llevan a cabo trabajos de mejora en la infraestructura de la organización por ejemplo implementando pipelines en Jenkins , implementando procesos de QA automatizados mediante SonarQube etc, otra pequeña parte del trabajo es investigar y proponer nuevas tecnologías que ayuden a los desarrolladores en las necesidades del servicio..</value>
+  </data>
+  <data name="GAT" xml:space="preserve">
+    <value>Grupo de Arquitectura Técnico</value>
+  </data>
+  <data name="GAT_descripcion" xml:space="preserve">
+    <value>Desarrollar la arquitectura base para los nuevos productos que se van a dar de alta en el servicio ,mediante una nueva arquitectura en NET8 , basada en DDD.</value>
+  </data>
+  <data name="GAT_descripcion2" xml:space="preserve">
+    <value>Complementariamente a esto también se da soporte y se revisa incidencias que pueda tener el equipo de desarrollo trabajando con Scrum</value>
+  </data>
   <data name="idCredencial" xml:space="preserve">
     <value>ID de la credencial:</value>
   </data>
@@ -264,11 +282,11 @@
   <data name="navbar_tecnologias" xml:space="preserve">
     <value>Tecnologías</value>
   </data>
+  <data name="Participating" xml:space="preserve">
+    <value>Participando en </value>
+  </data>
   <data name="programadorWebJuniorHiberusDescripcion1" xml:space="preserve">
     <value>Mi trabajo en gobierno de Navarra se puede dividir en dos áreas: GAD y Vivienda.</value>
-  </data>
-  <data name="programadorWebJuniorHiberusDescripcion2" xml:space="preserve">
-    <value>El equipo GAD (Grupo de Arquitectura de Desarrollo) es un equipo transversal cuya función principal es apoyar a los desarrolladores en aspectos relacionados con el desarrollo e integración de sus productos en el proceso de CI/CD. He podido colaborar con el proceso de CI/CD dentro de la organización a través de herramientas como Jenkins,o implementar análisis de código estático automatizados con SonarQube, además de investigar y proponer nuevas tecnologías que ayuden a la organización con las necesidades que van surgiendo.</value>
   </data>
   <data name="programadorWebJuniorHiberusDescripcion3" xml:space="preserve">
     <value>En el área de vivienda, mis funciones son realizar trabajos de mantenimiento y mejora de los diferentes productos de esta área. Los productos elaborados que se mantienen principalmente con tecnologías .NET Framework (principalmente WebForms)</value>

@@ -403,6 +403,60 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Grupo de Arquitectura de Desarrollo.
+        /// </summary>
+        public static string GAD {
+            get {
+                return ResourceManager.GetString("GAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a En el equipo de GAD (Grupo de Arquitectura de Desarrollo) se trata de un equipo transversal que tiene como función principal dar soporte a los desarrolladores en aspectos relacionados con el desarrollo y la integración de sus productos en el proceso de CI/CD..
+        /// </summary>
+        public static string GAD_descripcion {
+            get {
+                return ResourceManager.GetString("GAD_descripcion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Además del soporte también se llevan a cabo trabajos de mejora en la infraestructura de la organización por ejemplo implementando pipelines en Jenkins , implementando procesos de QA automatizados mediante SonarQube etc, otra pequeña parte del trabajo es investigar y proponer nuevas tecnologías que ayuden a los desarrolladores en las necesidades del servicio...
+        /// </summary>
+        public static string GAD_descripcion2 {
+            get {
+                return ResourceManager.GetString("GAD_descripcion2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Grupo de Arquitectura Técnico.
+        /// </summary>
+        public static string GAT {
+            get {
+                return ResourceManager.GetString("GAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Desarrollar la arquitectura base para los nuevos productos que se van a dar de alta en el servicio ,mediante una nueva arquitectura en NET8 , basada en DDD..
+        /// </summary>
+        public static string GAT_descripcion {
+            get {
+                return ResourceManager.GetString("GAT_descripcion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Complementariamente a esto también se da soporte y se revisa incidencias que pueda tener el equipo de desarrollo trabajando con Scrum.
+        /// </summary>
+        public static string GAT_descripcion2 {
+            get {
+                return ResourceManager.GetString("GAT_descripcion2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ID de la credencial:.
         /// </summary>
         public static string idCredencial {
@@ -502,20 +556,20 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Participando en .
+        /// </summary>
+        public static string Participating {
+            get {
+                return ResourceManager.GetString("Participating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Mi trabajo en gobierno de Navarra se puede dividir en dos áreas: GAD y Vivienda..
         /// </summary>
         public static string programadorWebJuniorHiberusDescripcion1 {
             get {
                 return ResourceManager.GetString("programadorWebJuniorHiberusDescripcion1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a El equipo GAD (Grupo de Arquitectura de Desarrollo) es un equipo transversal cuya función principal es apoyar a los desarrolladores en aspectos relacionados con el desarrollo e integración de sus productos en el proceso de CI/CD. He podido colaborar con el proceso de CI/CD dentro de la organización a través de herramientas como Jenkins,o implementar análisis de código estático automatizados con SonarQube, además de investigar y proponer nuevas tecnologías que ayuden a la organización con las necesidades que [resto de la cadena truncado]&quot;;.
-        /// </summary>
-        public static string programadorWebJuniorHiberusDescripcion2 {
-            get {
-                return ResourceManager.GetString("programadorWebJuniorHiberusDescripcion2", resourceCulture);
             }
         }
         

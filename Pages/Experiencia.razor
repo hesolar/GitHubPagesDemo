@@ -1,5 +1,4 @@
-﻿
-@page "/Experiencia"
+﻿@page "/Experiencia"
 @page "/Experience"
 @using CV.Shared.Resources
 @using CV.Shared
@@ -11,7 +10,7 @@
 <section class="resume-section" id="experiencia">
 
 
-   
+
 
     <div class="resume-section-content">
         <h2 class="mb-0">
@@ -19,39 +18,78 @@
         </h2>
         <br>
 
-        <SharedSection AltImagen="Hiberus Tecnología"
-                       Description=@(@$"{AllResourcesResolver["programadorWebJuniorHiberusDescripcion1"]}<br><li>{AllResourcesResolver["programadorWebJuniorHiberusDescripcion2"]}</li><li>{AllResourcesResolver["programadorWebJuniorHiberusDescripcion3"]}</li>".StringToRenderFragament())
-                       Subtitulo=@AllResourcesResolver["programadorWebJuniorHiberusSubTitulo"]
-                       SrcImagen="assets/img/logoHiberus.png"
-                       Titulo=@AllResourcesResolver["programadorWebJuniorHiberusTitulo"]
-                       TiempoTrabajo=@GetDateSince(new DateTime(2022,6,1))/>
+        <RadzenCard>
 
-        <SharedSection AltImagen="Hiberus Tecnología"
-                       Description=@(AllResourcesResolver["contratoPracticasHiberus1Descripcion"].ToString().StringToRenderFragament())
-                       Subtitulo=@AllResourcesResolver["contratoPracticasHiberus1Subitulo"]
-                       SrcImagen="assets/img/logoHiberus.png"
-                       Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
-                       TiempoTrabajo=@($"dc 2011 - mar. 2013 · 4 {AllResourcesResolver["meses"]}") />
 
-        <SharedSection AltImagen="Gnoss Tecnología"
-                       Description=@AllResourcesResolver["contratoPracticasGnossDescripcion"].ToString().StringToRenderFragament()
-                       Subtitulo=@AllResourcesResolver["contratoPracticasGnossSubitulo"]
-                       SrcImagen="assets/img/logoGnoss.png"
-                       Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
-                       TiempoTrabajo=@($"sept. 2021 - dc. 2021 · 4 {AllResourcesResolver["meses"]})") />
+            <SharedSection AltImagen="Hiberus Tecnología"
+                           Description=@(@$"{AllResourcesResolver["GAD_descripcion"] }<br>{AllResourcesResolver["GAD_descripcion2"]}".ToString().StringToRenderFragament())
+                           SrcImagen="assets/img/logoHiberus.png"
+                           Titulo=@AllResourcesResolver["GAD"]
+                           TiempoTrabajo=@($"jn 2022 - {AllResourcesResolver["actualidad"]}, {GetDateSince(new DateTime(2022,6,1))}") 
+                           Subtitulo=@($"{AllResourcesResolver["participating"]} {AllResourcesResolver["GAD"]}")
+                           Badges=@(new List<string> { "C#", "ASP.NET", "HTML", "CSS", "Jenkins", "Bootstrap", "Git", "SonarQube" ,"Gitlab", "Nexus"}) />
 
-        <SharedSection AltImagen="Hiberus Tecnología"
-                       Description=@AllResourcesResolver["contratoPracticasHiberus2Descripcion"].ToString().StringToRenderFragament()
-                       Subtitulo=@AllResourcesResolver["contratoPracticasGnossSubitulo"]
-                       SrcImagen="assets/img/logoHiberus.png"
-                       Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
-                       TiempoTrabajo=@($"jul. 2021 - sept. 2021 · 3 {AllResourcesResolver["meses"]}") />
-      
+            <SharedSection Description=@(@$"{AllResourcesResolver["GAT_descripcion"] }<br>{AllResourcesResolver["GAT_descripcion2"]}".ToString().StringToRenderFragament())
+                           Titulo=@AllResourcesResolver["GAT"]
+                           TiempoTrabajo=@($"feb 2024 - {AllResourcesResolver["actualidad"]}, {GetDateSince(new DateTime(2024,1,1))}") 
+                           Subtitulo=@($"{AllResourcesResolver["participating"]} {AllResourcesResolver["GAT"]}") 
+                           Badges=@(new List<string> { "C#", "ASP.NET", "Blazor", "CSS", "EF", "OpenAPI Swagger", "NET8", "DDD" ,"Scrum", "SqlServer"}) />
+
+
+
+            <SharedSection AltImagen="Hiberus Tecnología"
+                           Description=@(@$"<li>{AllResourcesResolver["programadorWebJuniorHiberusDescripcion3"]}</li>".StringToRenderFragament())
+                           Subtitulo=@AllResourcesResolver["programadorWebJuniorHiberusSubTitulo"]
+                           Titulo=@AllResourcesResolver["programadorWebJuniorHiberusTitulo"]
+                           TiempoTrabajo=@($"jn 2022 - nov 2023 1 {AllResourcesResolver["year"]}, 6 {AllResourcesResolver["months"]}") 
+                           Badges=@(new List<string> { "C#", "ASP.NET Framework", "MVC", "CSS", "WebForms" ,"SqlServer"}) />
+
+
+
+            <SharedSection AltImagen="Hiberus Tecnología"
+                           Description=@(AllResourcesResolver["contratoPracticasHiberus1Descripcion"].ToString().StringToRenderFragament())
+                           Subtitulo=@AllResourcesResolver["contratoPracticasHiberus1Subitulo"]
+                           Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
+                           TiempoTrabajo=@($"dc 2011 - mar. 2013 · 4 {AllResourcesResolver["meses"]}")
+                           Badges=@(new List<string> { "C#", "ASP.NET", "Blazor Server", "CSS", "HTML"}) />
+
+
+            
+
+        </RadzenCard>
+        <hr />
+
+        <RadzenCard>
+
+            <SharedSection AltImagen="Gnoss Tecnología"
+                           Description=@AllResourcesResolver["contratoPracticasGnossDescripcion"].ToString().StringToRenderFragament()
+                           Subtitulo=@AllResourcesResolver["contratoPracticasGnossSubitulo"]
+                           SrcImagen="assets/img/logoGnoss.png"
+                           Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
+                           TiempoTrabajo=@($"sept. 2021 - dc. 2021 · 4 {AllResourcesResolver["meses"]})")
+                           Badges=@(new List<string> { "C#", "ASP.NET", "MVC", "CSS", "HTML"}) />
+
+           
+        </RadzenCard>
+        <hr />
+        <RadzenCard>
+
+
+            <SharedSection AltImagen="Hiberus Tecnología"
+                           Description=@AllResourcesResolver["contratoPracticasHiberus2Descripcion"].ToString().StringToRenderFragament()
+                           Subtitulo=@AllResourcesResolver["contratoPracticasGnossSubitulo"]
+                           SrcImagen="assets/img/logoHiberus.png"
+                           Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
+                           TiempoTrabajo=@($"jul. 2021 - sept. 2021 · 3 {AllResourcesResolver["meses"]}")
+                           Badges=@(new List<string> { "C#", "ASP.NET", "MVC", "CSS", "HTML", "SQL Server"}) />
+            
+        </RadzenCard>
+
     </div>
 </section>
 <hr class="m-0" />
 
-@code{
+@code {
     String GetDateSince(DateTime fromDate)
     {
         DateTime currentDate = DateTime.Now;
@@ -79,17 +117,36 @@
         string monthResource;
         string yearResource;
 
-        if (months == 0) monthResource = "";
-        if (months == 1) monthResource = $"1 {AllResourcesResolver["month"]}";
-        else monthResource = $"{months} {AllResourcesResolver["months"]}";  
-        
-        
-        if (years == 0) yearResource = "";
-        if (years == 1) yearResource = $"1 {AllResourcesResolver["year"]}";
-        else yearResource = $"{years} {AllResourcesResolver["years"]}";
-        return ($" {monthResource}, {yearResource} ");
-    
-    
+        switch (months)
+        {
+            case 0:
+                monthResource = "";
+                break;
+            case 1:
+                monthResource = $"1 {AllResourcesResolver["month"]}";
+                break;
+            default:
+                monthResource = $"{months} {AllResourcesResolver["months"]}";
+                break;
+        }
+
+
+        switch (years)
+        {
+            case 0:
+                yearResource = "";
+                break;
+            case 1:
+                yearResource = $"1 {AllResourcesResolver["year"]}, ";
+                break;
+            default:
+                yearResource = $"{years} {AllResourcesResolver["years"]}, ";
+                break;
+        }
+
+        return ($" {yearResource}{monthResource} ");
+
+
     }
 
 
