@@ -130,7 +130,7 @@
     <value>Formacion en Azure 204</value>
   </data>
   <data name="Bienvenido" xml:space="preserve">
-    <value>Bienvenid@@ esta es mi pagina web para mostrar mi CV, ¡Espero que te guste!</value>
+    <value>Bienvenid@ esta es mi pagina web para mostrar mi CV, ¡Espero que te guste!</value>
   </data>
   <data name="ConstruidoCon" xml:space="preserve">
     <value>Esta página esta construida con Blazor, .Net ,publicada en Gihub Pages y utiizando la libreria Blazorise.</value>
