@@ -190,10 +190,7 @@
     <value>Cursos orientado a aprender nociones básicas del desarrollo web utilizando HTML5 , CSS y Javascript</value>
   </data>
   <data name="descripcionPersonal1" xml:space="preserve">
-    <value>Las tecnologías en las que me especializo son principalmente la pila tecnológica de ASP NET Core.</value>
-  </data>
-  <data name="descripcionPersonal2" xml:space="preserve">
-    <value>Mis preferencias son el desarrollo de aplicaciones y sus procesos de CI/ CD.</value>
+    <value>Me especializo en la pila tecnológica de ASP.NET Core, con un enfocando el desarrollo de aplicaciones con sus procesos de CI/CD.</value>
   </data>
   <data name="descripcionPersonal3" xml:space="preserve">
     <value>Idiomas: Español e Inglés</value>
@@ -205,7 +202,7 @@
     <value>Sobre mi...</value>
   </data>
   <data name="descripcionSobreMi2" xml:space="preserve">
-    <value>Hola, soy Héctor! Tengo 24 años he estudiado Ingeniería Informática. Y desde pequeño siempre he tenido claro que queríadedicarme a la informática como forma de mejorar la vida de las personas y contribuir al progreso. También tengo otras aficiones como la música,los juegos de mesa, viajar, practicar deporte o simplemente leer un buen libro o una serie😃</value>
+    <value>Hola, soy Héctor! Tengo 25 años he estudiado Ingeniería Informática. Y desde pequeño he tenido claro que quería dedicarme a la informática como forma de mejorar la vida de las personas y contribuir al progreso. También tengo otras aficiones como la música,los juegos de mesa, viajar, practicar deporte o simplemente leer un buen libro o una serie😃</value>
   </data>
   <data name="descripcionSobreMi3" xml:space="preserve">
     <value>Me considero una persona constante y trabajadora y creo que mi principal aptitud es el trabajo en equipo</value>
@@ -231,23 +228,29 @@
   <data name="EntityFrameworkDeVerdadTitle" xml:space="preserve">
     <value>Curso Entity Framework Core </value>
   </data>
+  <data name="GA" xml:space="preserve">
+    <value>Grupos de Arquitectura</value>
+  </data>
   <data name="GAD" xml:space="preserve">
     <value>Grupo de Arquitectura de Desarrollo</value>
   </data>
   <data name="GAD_descripcion" xml:space="preserve">
-    <value>En el equipo de GAD (Grupo de Arquitectura de Desarrollo) se trata de un equipo transversal que tiene como función principal dar soporte a los desarrolladores en aspectos relacionados con el desarrollo y la integración de sus productos en el proceso de CI/CD.</value>
+    <value>En el equipo de GAD (Grupo de Arquitectura de Desarrollo) se trata de un equipo transversal que tiene como función principal dar soporte a los desarrolladores en aspectos relacionados con el desarrollo y la integración de sus productos en el proceso de CI/CD dentro de la organización.</value>
   </data>
   <data name="GAD_descripcion2" xml:space="preserve">
-    <value>Además del soporte también se llevan a cabo trabajos de mejora en la infraestructura de la organización por ejemplo implementando pipelines en Jenkins , implementando procesos de QA automatizados mediante SonarQube etc, otra pequeña parte del trabajo es investigar y proponer nuevas tecnologías que ayuden a los desarrolladores en las necesidades del servicio..</value>
+    <value>Además del soporte también se llevan a cabo trabajos de mejora en la infraestructura de la organización por ejemplo implementando pipelines en Jenkins , implementando procesos de QA automatizados mediante SonarQube así como investigar y proponer nuevas tecnologías que ayuden a los desarrolladores en las necesidades del servicio.</value>
+  </data>
+  <data name="GAD_descripcion3" xml:space="preserve">
+    <value>GAD_descripcion2</value>
   </data>
   <data name="GAT" xml:space="preserve">
     <value>Grupo de Arquitectura Técnico</value>
   </data>
   <data name="GAT_descripcion" xml:space="preserve">
-    <value>Desarrollar la arquitectura base para los nuevos productos que se van a dar de alta en el servicio ,mediante una nueva arquitectura en NET8 , basada en DDD.</value>
+    <value>En el equipo de GAT (Grupo de Arquitectura Técnica), desarrollamos la arquitectura base para nuevos productos que se integrarán en el servicio, así como para aquellos que están en proceso de migración. Esta arquitectura modular, construida en .NET 8, se basa en el enfoque de Diseño Orientado a Dominio (DDD).</value>
   </data>
   <data name="GAT_descripcion2" xml:space="preserve">
-    <value>Complementariamente a esto también se da soporte y se revisa incidencias que pueda tener el equipo de desarrollo trabajando con Scrum</value>
+    <value>Complementariamente a esto también se da soporte y se facilita las migraciones de tecnologías legacy proponiendo nuevas alternativas.</value>
   </data>
   <data name="idCredencial" xml:space="preserve">
     <value>ID de la credencial:</value>
@@ -296,6 +299,15 @@
   </data>
   <data name="programadorWebJuniorHiberusTitulo" xml:space="preserve">
     <value>PROGRAMADOR WEB</value>
+  </data>
+  <data name="ScrumMasterDescripcion" xml:space="preserve">
+    <value>Este curso proporciona un conocimiento detallado del framework de Scrum, enfatizando su proceso de implementación.</value>
+  </data>
+  <data name="ScrumMasterSubtitulo" xml:space="preserve">
+    <value>Scrum Framework: Scrum Master &amp; Product Owner Certified</value>
+  </data>
+  <data name="ScrumMasteTitulo" xml:space="preserve">
+    <value>Scrum Master &amp; Agile</value>
   </data>
   <data name="String1" xml:space="preserve">
     <value />

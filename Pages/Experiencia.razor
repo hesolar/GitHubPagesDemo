@@ -22,18 +22,12 @@
 
 
             <SharedSection AltImagen="Hiberus Tecnología"
-                           Description=@(@$"{AllResourcesResolver["GAD_descripcion"] }<br>{AllResourcesResolver["GAD_descripcion2"]}".ToString().StringToRenderFragament())
+                           Description=@(@$"{AllResourcesResolver["GAD_descripcion"] }<br>{AllResourcesResolver["GAD_descripcion2"]}<br>{AllResourcesResolver["GAT_descripcion"] }<br>{AllResourcesResolver["GAT_descripcion2"]}".ToString().StringToRenderFragament())
                            SrcImagen="assets/img/logoHiberus.png"
-                           Titulo=@AllResourcesResolver["GAD"]
-                           TiempoTrabajo=@($"jn 2022 - {AllResourcesResolver["actualidad"]}, {GetDateSince(new DateTime(2022,6,1))}") 
-                           Subtitulo=@($"{AllResourcesResolver["participating"]} {AllResourcesResolver["GAD"]}")
-                           Badges=@(new List<string> { "C#", "ASP.NET", "HTML", "CSS", "Jenkins", "Bootstrap", "Git", "SonarQube" ,"Gitlab", "Nexus"}) />
-
-            <SharedSection Description=@(@$"{AllResourcesResolver["GAT_descripcion"] }<br>{AllResourcesResolver["GAT_descripcion2"]}".ToString().StringToRenderFragament())
-                           Titulo=@AllResourcesResolver["GAT"]
-                           TiempoTrabajo=@($"feb 2024 - {AllResourcesResolver["actualidad"]}, {GetDateSince(new DateTime(2024,1,1))}") 
-                           Subtitulo=@($"{AllResourcesResolver["participating"]} {AllResourcesResolver["GAT"]}") 
-                           Badges=@(new List<string> { "C#", "ASP.NET", "Blazor", "CSS", "EF", "OpenAPI Swagger", "NET8", "DDD" ,"Scrum", "SqlServer"}) />
+                           Titulo=@AllResourcesResolver["GA"]
+                           TiempoTrabajo=@($"jn 2022 - {AllResourcesResolver["actualidad"]}, {GetDateSince(new DateTime(2022,6,1))}")
+                           Subtitulo=@($"{AllResourcesResolver["Participating"]} {AllResourcesResolver["GA"]}")
+                           Badges=@(new List<string> { "C#", "ASP.NET", "HTML", "CSS", "Jenkins", "Bootstrap", "Git", "SonarQube" ,"Gitlab", "Nexus","Blazor", "CSS", "EF", "OpenAPI Swagger", "NET8", "DDD" ,"Scrum", "SqlServer"}) />
 
 
 
@@ -41,20 +35,21 @@
                            Description=@(@$"<li>{AllResourcesResolver["programadorWebJuniorHiberusDescripcion3"]}</li>".StringToRenderFragament())
                            Subtitulo=@AllResourcesResolver["programadorWebJuniorHiberusSubTitulo"]
                            Titulo=@AllResourcesResolver["programadorWebJuniorHiberusTitulo"]
-                           TiempoTrabajo=@($"jn 2022 - nov 2023 1 {AllResourcesResolver["year"]}, 6 {AllResourcesResolver["months"]}") 
                            Badges=@(new List<string> { "C#", "ASP.NET Framework", "MVC", "CSS", "WebForms" ,"SqlServer"}) />
 
+        </RadzenCard>
+        <hr />
 
-
+        <RadzenCard>
             <SharedSection AltImagen="Hiberus Tecnología"
                            Description=@(AllResourcesResolver["contratoPracticasHiberus1Descripcion"].ToString().StringToRenderFragament())
                            Subtitulo=@AllResourcesResolver["contratoPracticasHiberus1Subitulo"]
                            Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
-                           TiempoTrabajo=@($"dc 2011 - mar. 2013 · 4 {AllResourcesResolver["meses"]}")
+                           TiempoTrabajo=@($"dc 2021 - mar. 2021 · 4 {AllResourcesResolver["meses"]}")
                            Badges=@(new List<string> { "C#", "ASP.NET", "Blazor Server", "CSS", "HTML"}) />
 
 
-            
+
 
         </RadzenCard>
         <hr />
@@ -69,7 +64,7 @@
                            TiempoTrabajo=@($"sept. 2021 - dc. 2021 · 4 {AllResourcesResolver["meses"]})")
                            Badges=@(new List<string> { "C#", "ASP.NET", "MVC", "CSS", "HTML"}) />
 
-           
+
         </RadzenCard>
         <hr />
         <RadzenCard>
@@ -82,7 +77,7 @@
                            Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
                            TiempoTrabajo=@($"jul. 2021 - sept. 2021 · 3 {AllResourcesResolver["meses"]}")
                            Badges=@(new List<string> { "C#", "ASP.NET", "MVC", "CSS", "HTML", "SQL Server"}) />
-            
+
         </RadzenCard>
 
     </div>

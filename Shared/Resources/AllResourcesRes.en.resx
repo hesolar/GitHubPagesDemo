@@ -241,7 +241,7 @@
     <value>Cursos orientado a aprender nociones básicas del desarrollo web utilizando HTML5 , CSS y Javascript</value>
   </data>
   <data name="descripcionPersonal1" xml:space="preserve">
-    <value>Las tecnologías en las que me especializo son principalmente la pila tecnológica de ASP NET Core.</value>
+    <value>I specialize in the ASP.NET Core technology stack, with a particular focus on application development and optimizing CI/CD processes.</value>
   </data>
   <data name="descripcionPersonal11" xml:space="preserve">
     <value>Las tecnologías en las que me especializo son principalmente la pila tecnológica de ASP NET Core.</value>
@@ -305,6 +305,9 @@
   </data>
   <data name="EntityFrameworkDeVerdadTitle" xml:space="preserve">
     <value>Curso Entity Framework Core </value>
+  </data>
+  <data name="GA" xml:space="preserve">
+    <value>Arquitecture Sections</value>
   </data>
   <data name="GAD" xml:space="preserve">
     <value>Grupo de Arquitectura de Desarrollo</value>

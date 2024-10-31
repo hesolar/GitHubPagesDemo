@@ -1,6 +1,8 @@
 ﻿1. Revisar css isolation
-
-
+2. Actualizar fotos sobre mi
+3. Traducir a ingles los resx
+4.Elimininar resx
+5. Añadir pagina de posts
 
 
 

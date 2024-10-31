@@ -277,20 +277,11 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Las tecnologías en las que me especializo son principalmente la pila tecnológica de ASP NET Core..
+        ///   Busca una cadena traducida similar a Me especializo en la pila tecnológica de ASP.NET Core, con un enfocando el desarrollo de aplicaciones con sus procesos de CI/CD..
         /// </summary>
         public static string descripcionPersonal1 {
             get {
                 return ResourceManager.GetString("descripcionPersonal1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Mis preferencias son el desarrollo de aplicaciones y sus procesos de CI/ CD..
-        /// </summary>
-        public static string descripcionPersonal2 {
-            get {
-                return ResourceManager.GetString("descripcionPersonal2", resourceCulture);
             }
         }
         
@@ -322,7 +313,7 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Hola, soy Héctor! Tengo 24 años he estudiado Ingeniería Informática. Y desde pequeño siempre he tenido claro que queríadedicarme a la informática como forma de mejorar la vida de las personas y contribuir al progreso. También tengo otras aficiones como la música,los juegos de mesa, viajar, practicar deporte o simplemente leer un buen libro o una serie😃.
+        ///   Busca una cadena traducida similar a Hola, soy Héctor! Tengo 25 años he estudiado Ingeniería Informática. Y desde pequeño he tenido claro que quería dedicarme a la informática como forma de mejorar la vida de las personas y contribuir al progreso. También tengo otras aficiones como la música,los juegos de mesa, viajar, practicar deporte o simplemente leer un buen libro o una serie😃.
         /// </summary>
         public static string descripcionSobreMi2 {
             get {
@@ -403,6 +394,15 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Grupos de Arquitectura.
+        /// </summary>
+        public static string GA {
+            get {
+                return ResourceManager.GetString("GA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Grupo de Arquitectura de Desarrollo.
         /// </summary>
         public static string GAD {
@@ -412,7 +412,7 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a En el equipo de GAD (Grupo de Arquitectura de Desarrollo) se trata de un equipo transversal que tiene como función principal dar soporte a los desarrolladores en aspectos relacionados con el desarrollo y la integración de sus productos en el proceso de CI/CD..
+        ///   Busca una cadena traducida similar a En el equipo de GAD (Grupo de Arquitectura de Desarrollo) se trata de un equipo transversal que tiene como función principal dar soporte a los desarrolladores en aspectos relacionados con el desarrollo y la integración de sus productos en el proceso de CI/CD dentro de la organización..
         /// </summary>
         public static string GAD_descripcion {
             get {
@@ -421,11 +421,20 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Además del soporte también se llevan a cabo trabajos de mejora en la infraestructura de la organización por ejemplo implementando pipelines en Jenkins , implementando procesos de QA automatizados mediante SonarQube etc, otra pequeña parte del trabajo es investigar y proponer nuevas tecnologías que ayuden a los desarrolladores en las necesidades del servicio...
+        ///   Busca una cadena traducida similar a Además del soporte también se llevan a cabo trabajos de mejora en la infraestructura de la organización por ejemplo implementando pipelines en Jenkins , implementando procesos de QA automatizados mediante SonarQube así como investigar y proponer nuevas tecnologías que ayuden a los desarrolladores en las necesidades del servicio..
         /// </summary>
         public static string GAD_descripcion2 {
             get {
                 return ResourceManager.GetString("GAD_descripcion2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a GAD_descripcion2.
+        /// </summary>
+        public static string GAD_descripcion3 {
+            get {
+                return ResourceManager.GetString("GAD_descripcion3", resourceCulture);
             }
         }
         
@@ -439,7 +448,7 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Desarrollar la arquitectura base para los nuevos productos que se van a dar de alta en el servicio ,mediante una nueva arquitectura en NET8 , basada en DDD..
+        ///   Busca una cadena traducida similar a En el equipo de GAT (Grupo de Arquitectura Técnica), desarrollamos la arquitectura base para nuevos productos que se integrarán en el servicio, así como para aquellos que están en proceso de migración. Esta arquitectura modular, construida en .NET 8, se basa en el enfoque de Diseño Orientado a Dominio (DDD)..
         /// </summary>
         public static string GAT_descripcion {
             get {
@@ -448,7 +457,7 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Complementariamente a esto también se da soporte y se revisa incidencias que pueda tener el equipo de desarrollo trabajando con Scrum.
+        ///   Busca una cadena traducida similar a Complementariamente a esto también se da soporte y se facilita las migraciones de tecnologías legacy proponiendo nuevas alternativas..
         /// </summary>
         public static string GAT_descripcion2 {
             get {
@@ -597,6 +606,33 @@ namespace CV.Shared.Resources {
         public static string programadorWebJuniorHiberusTitulo {
             get {
                 return ResourceManager.GetString("programadorWebJuniorHiberusTitulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Este curso proporciona un conocimiento detallado del framework de Scrum, enfatizando su proceso de implementación..
+        /// </summary>
+        public static string ScrumMasterDescripcion {
+            get {
+                return ResourceManager.GetString("ScrumMasterDescripcion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Scrum Framework: Scrum Master &amp; Product Owner Certified.
+        /// </summary>
+        public static string ScrumMasterSubtitulo {
+            get {
+                return ResourceManager.GetString("ScrumMasterSubtitulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Scrum Master &amp; Agile.
+        /// </summary>
+        public static string ScrumMasteTitulo {
+            get {
+                return ResourceManager.GetString("ScrumMasteTitulo", resourceCulture);
             }
         }
         
