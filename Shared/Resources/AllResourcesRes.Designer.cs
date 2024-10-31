@@ -97,6 +97,24 @@ namespace CV.Shared.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Bienvenid@@ esta es mi pagina web para mostrar mi CV, ¡Espero que te guste!.
+        /// </summary>
+        public static string Bienvenido {
+            get {
+                return ResourceManager.GetString("Bienvenido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Esta página esta construida con Blazor, .Net ,publicada en Gihub Pages y utiizando la libreria Blazorise..
+        /// </summary>
+        public static string ConstruidoCon {
+            get {
+                return ResourceManager.GetString("ConstruidoCon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Prácticas obligatorias en el grado.Desarrollo Web orientado a cliente(BBVA), proyecto D4R(Data for Reputation)..
         /// </summary>
         public static string contratoPracticasGnossDescripcion {

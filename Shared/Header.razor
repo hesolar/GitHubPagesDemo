@@ -2,16 +2,30 @@
 @inject IStringLocalizer<AllResourcesRes> AllResourcesResolver
 @inject NavigationManager nav
 
-<RadzenTabs Style="background-image:conic-gradient()">
-    <Tabs>
-        <RadzenTabsItem Text="@AllResourcesResolver["navbar_inicio"]" @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_inicio"])) />
-        <RadzenTabsItem Text="@AllResourcesResolver["navbar_intereses"]" @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_intereses"])) />
-        <RadzenTabsItem Text="@AllResourcesResolver["navbar_experiencia"]" @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_experiencia"])) />
-        <RadzenTabsItem Text="@AllResourcesResolver["navbar_educacion"]" @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_educacion"])) />
-        <RadzenTabsItem Text="@AllResourcesResolver["navbar_tecnologias"]" @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_tecnologias"])) />
-        <RadzenTabsItem Text="@AllResourcesResolver["navbar_cursos"]" @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_cursos"])) />
-    </Tabs>
-</RadzenTabs>
+<Tabs SelectedTab="@selectedTab" SelectedTabChanged="@OnSelectedTabChanged">
+    <Items>
+        <Tab Name=@AllResourcesResolver["navbar_inicio"] 
+        @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_inicio"]))>@AllResourcesResolver["navbar_inicio"] </Tab>
 
+        <Tab Name=@AllResourcesResolver["navbar_intereses"] @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_intereses"]))>@AllResourcesResolver["navbar_intereses"]</Tab>
+        <Tab Name=@AllResourcesResolver["navbar_experiencia"] @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_experiencia"]))>@AllResourcesResolver["navbar_experiencia"]</Tab>
+        <Tab Name=@AllResourcesResolver["navbar_educacion"] @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_educacion"]))>@AllResourcesResolver["navbar_educacion"]</Tab>
+        <Tab Name=@AllResourcesResolver["navbar_tecnologias"] @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_tecnologias"]))>@AllResourcesResolver["navbar_tecnologias"]</Tab>
+        <Tab Name=@AllResourcesResolver["navbar_cursos"] @onclick=@(()=> nav.NavigateTo(AllResourcesResolver["navbar_cursos"]))>@AllResourcesResolver["navbar_cursos"]</Tab>
+    </Items>
+</Tabs>
+@code {
+    string selectedTab = string.Empty;
 
+    protected override void OnInitialized()
+    {
+        selectedTab = AllResourcesResolver["navbar_inicio"];
+    }
 
+    private Task OnSelectedTabChanged(string name)
+    {
+        selectedTab = name;
+
+        return Task.CompletedTask;
+    }
+}

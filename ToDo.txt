@@ -3,7 +3,7 @@
 3. Traducir a ingles los resx
 4.Elimininar resx
 5. Añadir pagina de posts
-
+6.sISTEMA GLOBAL DE MENUS
 
 
 
