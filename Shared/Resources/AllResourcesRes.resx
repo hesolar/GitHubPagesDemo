@@ -132,6 +132,9 @@
   <data name="Bienvenido" xml:space="preserve">
     <value>Bienvenid@ esta es mi pagina web para mostrar mi CV, ¡Espero que te guste!</value>
   </data>
+  <data name="Bienvenidx" xml:space="preserve">
+    <value>Bienvenid@!</value>
+  </data>
   <data name="ConstruidoCon" xml:space="preserve">
     <value>Esta página esta construida con Blazor, .Net ,publicada en Gihub Pages y utiizando la libreria Blazorise.</value>
   </data>
@@ -257,6 +260,9 @@
   </data>
   <data name="GAT_descripcion2" xml:space="preserve">
     <value>Complementariamente a esto también se da soporte y se facilita las migraciones de tecnologías legacy proponiendo nuevas alternativas.</value>
+  </data>
+  <data name="HelloWorld" xml:space="preserve">
+    <value>Hola Mundo!</value>
   </data>
   <data name="idCredencial" xml:space="preserve">
     <value>ID de la credencial:</value>

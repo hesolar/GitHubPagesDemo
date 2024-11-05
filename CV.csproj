@@ -7,6 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\Education\**" />
+    <Content Remove="Pages\Education\**" />
+    <EmbeddedResource Remove="Pages\Education\**" />
+    <None Remove="Pages\Education\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="README.md" />
+    <None Remove="ToDo.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Blazorise" Version="1.4.2" />
     <PackageReference Include="Blazorise.Bootstrap" Version="1.4.2" />
     <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.4.2" />
@@ -30,10 +42,6 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AllResourcesRes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Pages\Education\" />
   </ItemGroup>
 
 </Project>
