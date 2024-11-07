@@ -4,7 +4,7 @@
 4.Elimininar resx
 5. Añadir pagina de posts
 6.sISTEMA GLOBAL DE MENUS
-
+7. Estrategia de mitigacion de carga
 
 
 
