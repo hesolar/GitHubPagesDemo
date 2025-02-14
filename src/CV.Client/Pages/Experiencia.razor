@@ -1,0 +1,125 @@
+﻿@page "/Experiencia"
+@page "/Experience"
+@using CV.Client.Shared.Resources
+@using CV.Client.Shared
+@inject IStringLocalizer<AllResourcesRes> AllResourcesResolver
+
+<section class="resume-section" id="experiencia">
+    <div class="resume-section-content">
+        <h2 class="mb-2">
+            <span class="text-primary"> @AllResourcesResolver["navbar_experiencia"]</span>
+        </h2>
+
+        <RadzenCard>
+
+
+
+            <SharedSection AltImagen="Hiberus Tecnología"
+                           Description=@(@$"{AllResourcesResolver["GAD_descripcion"] }<br>{AllResourcesResolver["GAD_descripcion2"]}<br>{AllResourcesResolver["GAT_descripcion"] }<br>{AllResourcesResolver["GAT_descripcion2"]}".ToString().StringToRenderFragament())
+                           SrcImagen="assets/img/logoHiberus.png"
+                           Titulo=@AllResourcesResolver["GA"]
+                           TiempoTrabajo=@($"jn 2022 - {AllResourcesResolver["actualidad"]}, {GetDateSince(new DateTime(2022,6,1))}")
+                           Subtitulo=@($"{AllResourcesResolver["Participating"]} {AllResourcesResolver["GA"]}")
+                           Badges=@(new List<string> { "C#", "ASP.NET", "HTML", "CSS", "Jenkins", "Bootstrap", "Git", "SonarQube" ,"Gitlab", "Nexus","Blazor", "CSS", "EF", "OpenAPI Swagger", "NET8", "DDD" ,"Scrum", "SqlServer"}) />
+
+
+
+            <SharedSection AltImagen="Hiberus Tecnología"
+                           Description=@(@$"<li>{AllResourcesResolver["programadorWebJuniorHiberusDescripcion3"]}</li>".StringToRenderFragament())
+                           Subtitulo=@AllResourcesResolver["programadorWebJuniorHiberusSubTitulo"]
+                           Titulo=@AllResourcesResolver["programadorWebJuniorHiberusTitulo"]
+                           Badges=@(new List<string> { "C#", "ASP.NET Framework", "MVC", "CSS", "WebForms" ,"SqlServer"}) />
+
+        </RadzenCard>
+
+        <SharedSection AltImagen="Hiberus Tecnología"
+                       Description=@(AllResourcesResolver["contratoPracticasHiberus1Descripcion"].ToString().StringToRenderFragament())
+                       Subtitulo=@AllResourcesResolver["contratoPracticasHiberus1Subitulo"]
+                       Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
+                       TiempoTrabajo=@($"dc 2021 - mar. 2021 · 4 {AllResourcesResolver["meses"]}")
+                       Badges=@(new List<string> { "C#", "ASP.NET", "Blazor Server", "CSS", "HTML"}) />
+
+        <SharedSection AltImagen="Gnoss Tecnología"
+                       Description=@AllResourcesResolver["contratoPracticasGnossDescripcion"].ToString().StringToRenderFragament()
+                       Subtitulo=@AllResourcesResolver["contratoPracticasGnossSubitulo"]
+                       SrcImagen="assets/img/logoGnoss.png"
+                       Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
+                       TiempoTrabajo=@($"sept. 2021 - dc. 2021 · 4 {AllResourcesResolver["meses"]})")
+                       Badges=@(new List<string> { "C#", "ASP.NET", "MVC", "CSS", "HTML"}) />
+
+        <SharedSection AltImagen="Hiberus Tecnología"
+                       Description=@AllResourcesResolver["contratoPracticasHiberus2Descripcion"].ToString().StringToRenderFragament()
+                       Subtitulo=@AllResourcesResolver["contratoPracticasGnossSubitulo"]
+                       SrcImagen="assets/img/logoHiberus.png"
+                       Titulo=@AllResourcesResolver["contratoPracticasHiberus1Titulo"]
+                       TiempoTrabajo=@($"jul. 2021 - sept. 2021 · 3 {AllResourcesResolver["meses"]}")
+                       Badges=@(new List<string> { "C#", "ASP.NET", "MVC", "CSS", "HTML", "SQL Server"}) />
+
+
+    </div>
+</section>
+<hr class="m-0" />
+
+@code {
+    String GetDateSince(DateTime fromDate)
+    {
+        DateTime currentDate = DateTime.Now;
+
+        // Si la fecha de inicio es mayor que la fecha actual, intercambiamos las fechas
+        if (fromDate > currentDate)
+        {
+            DateTime temp = fromDate;
+            fromDate = currentDate;
+            currentDate = temp;
+        }
+
+        int years = currentDate.Year - fromDate.Year;
+        int months = currentDate.Month - fromDate.Month;
+
+        // Ajustar los años y meses si el mes actual es menor que el mes de inicio
+        if (months < 0)
+        {
+            years--;
+            months += 12;
+        }
+
+        //tohack refactorizar y limpiar esto
+        //ajustar si son 0 nada, si es uno singular, si son varios plural
+        string monthResource;
+        string yearResource;
+
+        switch (months)
+        {
+            case 0:
+            monthResource = "";
+            break;
+            case 1:
+            monthResource = $"1 {AllResourcesResolver["month"]}";
+            break;
+            default:
+            monthResource = $"{months} {AllResourcesResolver["months"]}";
+            break;
+        }
+
+
+        switch (years)
+        {
+            case 0:
+            yearResource = "";
+            break;
+            case 1:
+            yearResource = $"1 {AllResourcesResolver["year"]}, ";
+            break;
+            default:
+            yearResource = $"{years} {AllResourcesResolver["years"]}, ";
+            break;
+        }
+
+        return ($" {yearResource}{monthResource} ");
+
+
+    }
+
+
+
+}

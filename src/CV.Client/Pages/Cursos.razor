@@ -1,0 +1,109 @@
+﻿@page "/Cursos"
+@page "/Courses"
+@page "/CV/Cursos"
+@page "/CV/Courses"
+
+@using CV.Client.Shared;
+
+@inject IStringLocalizer<AllResourcesRes> AllResourcesResolver
+
+
+<section class="resume-section" id="cursos">
+    <div class="resume-section-content">
+
+        <h2 class="mb-5">
+            <span class="text-primary"> @AllResourcesResolver["cursosCertificaciones"] </span>
+        </h2>
+        <SharedSection AltImagen="PUE"
+                       Description=@(@$"<div>{AllResourcesResolver["ScrumMasterDescripcion"]}</p></div>".StringToRenderFragament())
+                       Subtitulo=@AllResourcesResolver["ScrumMasterSubtitulo"]
+                       SrcImagen="assets/icons/cursos/pue.png"
+                       Titulo=@AllResourcesResolver["ScrumMasteTitulo"]
+                       TiempoTrabajo="jun. 2024" />
+
+         <SharedSection AltImagen="Udemy"
+                       Description=@(@$"<div>{AllResourcesResolver["EntityFrameworkDeVerdadDescription"]}</p></div>".StringToRenderFragament())
+                       Subtitulo=@AllResourcesResolver["EntityFrameworkDeVerdadSubtitle"]
+                       SrcImagen="assets/icons/cursos/udemy.png"
+                       Titulo=@AllResourcesResolver["EntityFrameworkDeVerdadTitle"]
+                       TiempoTrabajo="mar. 2024" />
+
+           <SharedSection AltImagen="PUE"
+                       Description=@(@$"<div>{AllResourcesResolver["DockerCertificatedAsociatedDescription"]}</p></div>".StringToRenderFragament())
+                       Subtitulo=@AllResourcesResolver["DockerCertificatedAsociatedSubtitulo"]
+                       SrcImagen="assets/icons/cursos/pue.png"
+                       Titulo=@AllResourcesResolver["DockerCertificatedAsociated"]
+                       TiempoTrabajo="mar. 2024" />
+
+        <SharedSection AltImagen="Campus mvp"
+                       Description=@(@$"<div>{AllResourcesResolver["CssHtmlMVPDescripcion"]}</p></div>".StringToRenderFragament())
+                       Subtitulo=@AllResourcesResolver["CssHtmlMVPSubtitulo"]
+                       SrcImagen="assets/icons/cursos/campusmvp.png"
+                       Titulo=@AllResourcesResolver["CssHtmlMVPTitulo"]
+                       TiempoTrabajo="dc. 2023" />
+
+        <SharedSection AltImagen="PUE"
+                       Description=@(@$"<div>{AllResourcesResolver["Az204Descripcion"]}</p></div>".StringToRenderFragament())
+                       Subtitulo=@AllResourcesResolver["Az204Subtitulo"]
+                       SrcImagen="assets/icons/cursos/pue.png"
+                       Titulo=@AllResourcesResolver["Az204Titulo"]
+                       TiempoTrabajo="sept. 2023" />
+
+        <SharedSection AltImagen="Gobierno de la Rioja"
+                       Description=@(@$"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p> {AllResourcesResolver["descripcionCursoMaui"]} </p></div>".StringToRenderFragament())
+                       Subtitulo=@($"{AllResourcesResolver["idCredencial"]} A5B5KNFRNNOALQ8")
+                       SrcImagen="assets/icons/cursos/gobrioja.png"
+                       Titulo=@AllResourcesResolver["tituloReact"]
+                       TiempoTrabajo="jun. 2023" />
+
+        <SharedSection AltImagen="Azure Fundamentals"
+                       Description=@(@$"<div><a href=""https://www.credly.com/badges/cd0b206f-92b1-4f31-a4a6-91d839f75b7c/linked_in? t=rn03ir"">{AllResourcesResolver["verificacionDocumentos"]}</a></div>".StringToRenderFragament())
+                       Subtitulo=@($"{AllResourcesResolver["idCredencial"]} 994243461")
+                       SrcImagen="assets/icons/cursos/azurefundamentals.png"
+                       Titulo=@AllResourcesResolver["tituloaz900"]
+                       TiempoTrabajo="dc. 2022" />
+
+        <SharedSection AltImagen="Gobierno de la Rioja"
+                       Description=@(@$"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p> {AllResourcesResolver["descripcionCursoMaui"]} </p></div>".StringToRenderFragament())
+                       Subtitulo=@($"{AllResourcesResolver["idCredencial"]} E5M024D62Y90BZT")
+                       SrcImagen="assets/icons/cursos/gobrioja.png"
+                       Titulo=@AllResourcesResolver["tituloCursoMaui"]
+                       TiempoTrabajo="oct. 2022" />
+
+        <SharedSection AltImagen="Gobierno de la Rioja"
+                       Description=@($@"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div>".StringToRenderFragament())
+                       Subtitulo=@($"{AllResourcesResolver["idCredencial"]} Y83Q73BHZDJY9BF")
+                       SrcImagen="assets/icons/cursos/gobrioja.png"
+                       Titulo=@AllResourcesResolver["tituloCursoBlazor"]
+                       TiempoTrabajo="sept. 2022" />
+
+        <SharedSection AltImagen="Gobierno de la Rioja"
+                       Description=@($@"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p>{AllResourcesResolver["descripcionProgramacionNET"]} </p></div>".StringToRenderFragament())
+                       Subtitulo=@($"{AllResourcesResolver["idCredencial"]} IYYS1J3Y8FGH5J5ID")
+                       SrcImagen="assets/icons/cursos/gobrioja.png"
+                       Titulo=@AllResourcesResolver["tituloProgramacionNET"]
+                       TiempoTrabajo="Jul. 2022" />
+
+        <SharedSection AltImagen="GoogleActivate"
+                       Description=@($@"{AllResourcesResolver["descripcionCloudComputing"]} <a href=""https://learndigital.withgoogle.com/link/1nur091p2ww"">".StringToRenderFragament())
+                       Subtitulo=@($"{AllResourcesResolver["idCredencial"]} NZQ DVY NBU")
+                       SrcImagen="assets/icons/cursos/googleactivate.png"
+                       Titulo="Cloud Computing"
+                       TiempoTrabajo="oct. 2021" />
+
+        <SharedSection AltImagen="Gobierno de la Rioja"
+                       Description=@($@"<div><a href=""https://www.larioja.org/oficina-electronica/es/verificacion-documentos-electronicos"">{AllResourcesResolver["verificacionDocumentos"]}</a></div><div><p>{AllResourcesResolver["descripcionContenedoresDocker"]}</p></div>".StringToRenderFragament())
+                       Subtitulo=@($"{AllResourcesResolver["idCredencial"]} UXGJYIVF8J4JEZX")
+                       SrcImagen="assets/icons/cursos/gobrioja.png"
+                       Titulo=@AllResourcesResolver["tituloContenedoresDocker"]
+                       TiempoTrabajo="sept. 2021" />
+
+        <SharedSection AltImagen="GoogleActivate"
+                       Description=@($@"{AllResourcesResolver["idCredencial"]} AAU 9KS DU9 & R3D SRM CTN</div><div><a href=""https://learndigital.withgoogle.com/link/1nur091p2ww"">{AllResourcesResolver["verificacionCertificados"]}</a></div><div><p>{AllResourcesResolver["descripcionIntroduccionDesarrolloWeb"]}</p></div>".StringToRenderFragament())
+                       Subtitulo=@($"{AllResourcesResolver["idCredencial"]} AAU 9KS DU9 & R3D SRM CTN")
+                       SrcImagen="assets/icons/cursos/googleactivate.png"
+                       Titulo=@AllResourcesResolver["tituloIntroduccionDesarrolloWeb"]
+                       TiempoTrabajo="sept. 2021" />
+    </div>
+</section>
+
