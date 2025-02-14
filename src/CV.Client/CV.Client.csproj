@@ -9,9 +9,13 @@
 
   <ItemGroup>
     <Compile Remove="Pages\Education\**" />
+    <Compile Remove="wwwroot\**" />
     <Content Remove="Pages\Education\**" />
+    <Content Remove="wwwroot\**" />
     <EmbeddedResource Remove="Pages\Education\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
     <None Remove="Pages\Education\**" />
+    <None Remove="wwwroot\**" />
   </ItemGroup>
 
   <ItemGroup>
