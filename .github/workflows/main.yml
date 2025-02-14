@@ -24,7 +24,7 @@ jobs:
       run: dotnet publish -c Release
 
     - name: Mostrar contenido del directorio
-        run: ls -la
+      run: ls -la
 
       
     - name: Rewrite base href
