@@ -22,6 +22,11 @@ jobs:
 
     - name: Publish app
       run: dotnet publish -c Release
+
+    - name: Mostrar contenido del directorio
+        run: ls -la
+
+      
     - name: Rewrite base href
       uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
       with:
