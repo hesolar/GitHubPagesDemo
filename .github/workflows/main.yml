@@ -27,6 +27,9 @@ jobs:
     - name: Display .NET version
       run: dotnet --list-sdks # Verifica que la versión correcta se haya instalado
 
+    - name: Clean project
+      run: dotnet clean
+
     - name: Publish app
       run: dotnet publish -c Release -f net9.0  # Publicar usando .NET 9.0
 
