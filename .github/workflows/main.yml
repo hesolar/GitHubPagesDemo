@@ -21,6 +21,9 @@ jobs:
       with:
         dotnet-version: '9.0.x'  # Use the latest .NET 9 version
 
+    - name: Restore dependencies
+      run: dotnet restore
+
     - name: Display .NET version
       run: dotnet --list-sdks # Verifica que la versión correcta se haya instalado
 
