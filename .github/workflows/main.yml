@@ -24,7 +24,7 @@ jobs:
         ./dotnet-install.sh --channel 9.0
 
     - name: Display .NET version
-      run: dotnet --version  # Verifica que la versión correcta se haya instalado
+      run: dotnet --list-sdks # Verifica que la versión correcta se haya instalado
 
     - name: Publish app
       run: dotnet publish -c Release -f net9.0  # Publicar usando .NET 9.0
