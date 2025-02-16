@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Franco\\Desktop\\repos\\CV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6780086-DD90-4563-9D29-B25EF3DF0D48}|Solution Items{A6780086-DD90-4563-9D29-B25EF3DF0D48}|C:\\Users\\Franco\\Desktop\\repos\\CV\\.github\\workflows\\main.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A6780086-DD90-4563-9D29-B25EF3DF0D48}|Solution Items{A6780086-DD90-4563-9D29-B25EF3DF0D48}|solutionrelative:.github\\workflows\\main.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6780086-DD90-4563-9D29-B25EF3DF0D48}|Solution Items{A6780086-DD90-4563-9D29-B25EF3DF0D48}|C:\\Users\\Franco\\Desktop\\repos\\CV\\.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A6780086-DD90-4563-9D29-B25EF3DF0D48}|Solution Items{A6780086-DD90-4563-9D29-B25EF3DF0D48}|solutionrelative:.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".gitattributes",
+              "DocumentMoniker": "C:\\Users\\Franco\\Desktop\\repos\\CV\\.gitattributes",
+              "RelativeDocumentMoniker": ".gitattributes",
+              "ToolTip": "C:\\Users\\Franco\\Desktop\\repos\\CV\\.gitattributes",
+              "RelativeToolTip": ".gitattributes",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-16T13:12:52.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.yml",
+              "DocumentMoniker": "C:\\Users\\Franco\\Desktop\\repos\\CV\\.github\\workflows\\main.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\main.yml",
+              "ToolTip": "C:\\Users\\Franco\\Desktop\\repos\\CV\\.github\\workflows\\main.yml",
+              "RelativeToolTip": ".github\\workflows\\main.yml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-02-16T12:29:17.556Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
