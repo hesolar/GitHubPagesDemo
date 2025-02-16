@@ -51,7 +51,7 @@ jobs:
         git commit -m "Deploy site to gh-pages"
         
         # Push changes to the gh-pages branch
-        git push origin gh-pages
+        git push -f origin gh-pages
 
     # - name: Deploy to GitHub Pages
     #   if: success()
