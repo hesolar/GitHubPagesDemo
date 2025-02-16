@@ -27,11 +27,11 @@ jobs:
       run: ls -la
 
       
-    - name: Rewrite base href
-      uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
-      with:
-        html_path: bin/Release/net8.0/wwwroot/index.html
-        base_href: /CV/
+    # - name: Rewrite base href
+    #   uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
+    #   with:
+    #     html_path: bin/Release/net8.0/wwwroot/index.html
+    #     base_href: /CV/
 
 
     - name: GitHub Pages
