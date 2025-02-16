@@ -26,7 +26,6 @@ jobs:
       run: dotnet clean
 
     - name: Publish app
-
       run: dotnet publish
 
     - name: GitHub Pages
