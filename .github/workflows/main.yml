@@ -1,7 +1,6 @@
 name: PublishApp
 
 env:
-  # Actualizamos la ruta de publicación para net9.0
   PUBLISH_DIR: bin/Release/net9.0/publish/wwwroot
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -10,7 +9,6 @@ on:
     branches: [ main ]
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     steps:
@@ -19,28 +17,22 @@ jobs:
     - name: Set up .NET 9
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '9.0.x'  # Use the latest .NET 9 version
+        dotnet-version: '9.0.x'
 
     - name: Restore dependencies
       run: dotnet restore
 
+    - name: Clean up bin/obj directories
+      run: rm -rf bin/ obj/  # Clean up to avoid file locking issues
+
     - name: Display .NET version
-      run: dotnet --list-sdks # Verifica que la versión correcta se haya instalado
+      run: dotnet --list-sdks
 
     - name: Clean project
       run: dotnet clean
 
     - name: Publish app
-      run: dotnet publish -c Release -f net9.0  # Publicar usando .NET 9.0
-
-    - name: Mostrar contenido del directorio
-      run: ls -la
-
-    # - name: Rewrite base href
-    #   uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
-    #   with:
-    #     html_path: bin/Release/net9.0/wwwroot/index.html
-    #     base_href: /CV/
+      run: dotnet publish -c Release -f net9.0
 
     - name: GitHub Pages
       if: success()
