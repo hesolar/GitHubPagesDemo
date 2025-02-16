@@ -14,14 +14,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    # Instalamos .NET 9.0 (preview)
-    - name: Install .NET 9.0 SDK
-      run: |
-        wget https://dotnet.microsoft.com/en-us/download/dotnet/scripts/v1/dotnet-install.sh
-        chmod +x dotnet-install.sh
-        ./dotnet-install.sh --channel 9.0
+    - name: Set up .NET 9
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '9.0.x'  # Use the latest .NET 9 version
 
     - name: Display .NET version
       run: dotnet --list-sdks # Verifica que la versión correcta se haya instalado
