@@ -44,7 +44,7 @@ jobs:
         git rm -rf .
         
         # Copy the compiled files from the publish directory to the root
-        cp -r ${{ env.PUBLISH_DIR }}/* .
+        cp -r ${{ env.PUBLISH_DIR }}/src/CV/wwwroot/* .
         
         # Add and commit the changes
         git add .
