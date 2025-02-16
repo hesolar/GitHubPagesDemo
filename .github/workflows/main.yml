@@ -1,7 +1,7 @@
 name: PublishApp
 
 env:
-  PUBLISH_DIR: bin/Release/net9.0/publish/CV
+  PUBLISH_DIR: bin/Release/net9.0
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 on:
