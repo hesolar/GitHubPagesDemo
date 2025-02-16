@@ -26,7 +26,7 @@ jobs:
       run: dotnet clean
 
     - name: Publish app
-      run: dotnet publish CV/src/CV/CV.csproj
+      run: dotnet publish src/CV/CV.csproj
 
     - name: GitHub Pages
       if: success()
