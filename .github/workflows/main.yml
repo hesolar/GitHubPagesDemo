@@ -12,7 +12,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
     - name: Set up .NET 9
       uses: actions/setup-dotnet@v3
@@ -28,11 +29,35 @@ jobs:
     - name: Publish app
       run: dotnet publish src/CV/CV.csproj
 
-    - name: GitHub Pages
+    - name: Set up Git for gh-pages branch
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
+    - name: Create gh-pages branch and deploy to GitHub Pages
       if: success()
-      uses: crazy-max/ghaction-github-pages@v1.5.1
-      with:
-        target_branch: gh-pages
-        build_dir: ${{ env.PUBLISH_DIR }}
-      env:
-        GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+      run: |
+        # Checkout to gh-pages branch
+        git checkout -b gh-pages
+        
+        # Remove any existing files from the gh-pages branch
+        git rm -rf .
+        
+        # Copy the compiled files from the publish directory to the root
+        cp -r ${{ env.PUBLISH_DIR }}/* .
+        
+        # Add and commit the changes
+        git add .
+        git commit -m "Deploy site to gh-pages"
+        
+        # Push changes to the gh-pages branch
+        git push origin gh-pages
+
+    # - name: Deploy to GitHub Pages
+    #   if: success()
+    #   uses: crazy-max/ghaction-github-pages@v1.5.1
+    #   with:
+    #     target_branch: gh-pages
+    #     build_dir: ${{ env.PUBLISH_DIR }}
+    #   env:
+    #     GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
