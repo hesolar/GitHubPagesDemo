@@ -357,11 +357,17 @@
   <data name="navbar_cursos1" xml:space="preserve">
     <value>Cursos</value>
   </data>
+  <data name="navbar_cursos2" xml:space="preserve">
+    <value>COURSES</value>
+  </data>
   <data name="navbar_educacion" xml:space="preserve">
     <value>EDUCACIÓN</value>
   </data>
   <data name="navbar_educacion1" xml:space="preserve">
     <value>Educacion</value>
+  </data>
+  <data name="navbar_educacion2" xml:space="preserve">
+    <value>EDUCATION</value>
   </data>
   <data name="navbar_experiencia" xml:space="preserve">
     <value>EXPERIENCIA</value>
@@ -369,11 +375,17 @@
   <data name="navbar_experiencia1" xml:space="preserve">
     <value>Experiencia</value>
   </data>
+  <data name="navbar_experiencia2" xml:space="preserve">
+    <value>EXPERIENCE</value>
+  </data>
   <data name="navbar_inicio" xml:space="preserve">
     <value>INICIO</value>
   </data>
   <data name="navbar_inicio1" xml:space="preserve">
     <value>Inicio</value>
+  </data>
+  <data name="navbar_inicio2" xml:space="preserve">
+    <value>INTRODUCTION</value>
   </data>
   <data name="navbar_intereses" xml:space="preserve">
     <value>SOBRE MI</value>
@@ -381,11 +393,17 @@
   <data name="navbar_intereses1" xml:space="preserve">
     <value>SobreMi</value>
   </data>
+  <data name="navbar_intereses2" xml:space="preserve">
+    <value>ABOUT ME</value>
+  </data>
   <data name="navbar_tecnologias" xml:space="preserve">
     <value>TECNOLOGÍAS</value>
   </data>
   <data name="navbar_tecnologias1" xml:space="preserve">
     <value>Tecnologías</value>
+  </data>
+  <data name="navbar_tecnologias2" xml:space="preserve">
+    <value>TECNOLOGIES</value>
   </data>
   <data name="Participating" xml:space="preserve">
     <value>Participating in </value>
@@ -473,6 +491,21 @@
   </data>
   <data name="tituloReact" xml:space="preserve">
     <value>React Course</value>
+  </data>
+  <data name="url_cursos" xml:space="preserve">
+    <value>courses</value>
+  </data>
+  <data name="url_educacion" xml:space="preserve">
+    <value>education</value>
+  </data>
+  <data name="url_experiencia" xml:space="preserve">
+    <value>experience</value>
+  </data>
+  <data name="url_intereses" xml:space="preserve">
+    <value>aboutme</value>
+  </data>
+  <data name="url_tecnologias" xml:space="preserve">
+    <value>technologies</value>
   </data>
   <data name="verificacionCertificados" xml:space="preserve">
     <value>Verificación de certificados:</value>

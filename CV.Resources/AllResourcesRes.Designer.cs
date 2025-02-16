@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CV.Client.Shared.Resources {
+namespace CV.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CV.Client.Shared.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CV.Client.Shared.Resources.AllResourcesRes", typeof(AllResourcesRes).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CV.Resources.AllResourcesRes", typeof(AllResourcesRes).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

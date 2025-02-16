@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CV", "src\CV\CV.csproj", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CV.Client", "src\CV.Client\CV.Client.csproj", "{37DEF2BC-4840-4AAE-913A-E19F946E3950}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CV.Resources", "CV.Resources\CV.Resources.csproj", "{4D5B89AD-3A94-42D2-A3C9-0769C0CD5245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CV.Shared", "CV.Shared\CV.Shared.csproj", "{6206138C-0250-4E57-8ACA-C626EDC45B70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{37DEF2BC-4840-4AAE-913A-E19F946E3950}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37DEF2BC-4840-4AAE-913A-E19F946E3950}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37DEF2BC-4840-4AAE-913A-E19F946E3950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D5B89AD-3A94-42D2-A3C9-0769C0CD5245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D5B89AD-3A94-42D2-A3C9-0769C0CD5245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D5B89AD-3A94-42D2-A3C9-0769C0CD5245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D5B89AD-3A94-42D2-A3C9-0769C0CD5245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6206138C-0250-4E57-8ACA-C626EDC45B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6206138C-0250-4E57-8ACA-C626EDC45B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6206138C-0250-4E57-8ACA-C626EDC45B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6206138C-0250-4E57-8ACA-C626EDC45B70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

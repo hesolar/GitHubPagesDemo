@@ -21,11 +21,9 @@
         <Icon Name=IconName.InfoCircle Color=Color.Primary />
     </Button>
 </Tooltip>
-<CV.Shared.Services.RatingService/>
 
 
 @code {
-    [Inject] IMessageService MessageService { get; set; }
     string selectedTab = string.Empty;
 
     protected override void OnInitialized()

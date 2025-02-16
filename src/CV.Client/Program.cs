@@ -31,4 +31,5 @@ builder.Services.AddScoped(sp => new HttpClient
 });
 
 builder.Services.AddLocalization();
+
 await builder.Build().RunAsync();
